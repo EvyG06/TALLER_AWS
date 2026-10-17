@@ -1,0 +1,33 @@
+# Entorno
+.venv/
+__pycache__/
+.DS_Store
+.kilo/
+
+# Credenciales y llaves
+.env
+.aws/
+*.pem
+*.key
+*.csv
+
+# Terraform (punto 2)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfplan
+crash.log
+
+# Estados locales de scripts
+estado_*.json
+estado_*.txt
+
+# Datos del taller (excepcion a *.csv)
+!punto5/datos/*.csv
+!punto5/resultados/*.csv
+!punto6/*.csv
+
+# No pertenecen a este repositorio
+TALLER_AWS/
+Respuestas Document.md

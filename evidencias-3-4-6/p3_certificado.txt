@@ -1,0 +1,2 @@
+-rw-r--r-- 1 ingdatos ingdatos 174560 Oct 17 12:26 /home/ingdatos/certs/global-bundle.pem
+-rwxrwxrwx 1 ingdatos ingdatos 174560 Oct 17 12:26 /mnt/c/certs/global-bundle.pem

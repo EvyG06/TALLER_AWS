@@ -1,0 +1,19 @@
+Conectado. Bases: []
+Insertados: 10
+
+Filtro: Electrónica con precio > 100
+{'nombre': 'Portátil', 'categoria': 'Electrónica', 'precio': 2500, 'stock': 12}
+{'nombre': 'Teclado', 'categoria': 'Electrónica', 'precio': 120, 'stock': 45}
+{'nombre': 'Monitor', 'categoria': 'Electrónica', 'precio': 900, 'stock': 20}
+
+Ordenación: todos por precio descendente (top 5)
+{'nombre': 'Portátil', 'categoria': 'Electrónica', 'precio': 2500, 'stock': 12}
+{'nombre': 'Monitor', 'categoria': 'Electrónica', 'precio': 900, 'stock': 20}
+{'nombre': 'Escritorio', 'categoria': 'Muebles', 'precio': 700, 'stock': 8}
+{'nombre': 'Silla', 'categoria': 'Muebles', 'precio': 450, 'stock': 15}
+{'nombre': 'Teclado', 'categoria': 'Electrónica', 'precio': 120, 'stock': 45}
+
+Agregación: por categoría, cantidad, precio promedio y stock total
+{'_id': 'Electrónica', 'productos': 4, 'precio_promedio': 895.0, 'stock_total': 157}
+{'_id': 'Muebles', 'productos': 3, 'precio_promedio': 413.3333333333333, 'stock_total': 53}
+{'_id': 'Papelería', 'productos': 3, 'precio_promedio': 5.0, 'stock_total': 1000}

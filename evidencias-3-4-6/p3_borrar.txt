@@ -1,0 +1,22 @@
+>> Borrando DocumentDB...
+  esperando a que desaparezca el clúster...
+  esperando a que desaparezca el clúster...
+>> Terminando EC2...
+>> Borrando red...
+{
+    "Return": true,
+    "GroupId": "sg-0a78c346d835bfc7f"
+}
+{
+    "Return": true,
+    "GroupId": "sg-0c8b103461a1a7f3e"
+}
+>> Verificación final:
+== Clústeres DocumentDB ==
+== Instancias DocumentDB ==
+== EC2 activas ==
+== Grupos de seguridad del taller ==
+== Secretos ==
+== Volúmenes EBS ==
+== Snapshots DocumentDB ==
+docdb-taller

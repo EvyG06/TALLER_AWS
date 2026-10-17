@@ -1,0 +1,22 @@
+
+>> SELECT COUNT(*) AS total FROM ventas
+total
+24
+-- bytes escaneados: 1107 | tiempo: 628 ms
+
+>> SELECT id, cliente, producto, cantidad, precio FROM ventas WHERE ciudad = 'Medellin' AND precio > 300 ORDER BY precio DESC
+id | cliente | producto | cantidad | precio
+10 | Juan | Portatil | 1 | 920.0
+17 | Quique | Portatil | 1 | 910.0
+1 | Ana | Portatil | 1 | 899.9
+21 | Ulises | Monitor | 1 | 325.0
+4 | Diego | Monitor | 1 | 320.0
+-- bytes escaneados: 1107 | tiempo: 709 ms
+
+>> SELECT ciudad, COUNT(*) AS num_ventas, SUM(cantidad) AS unidades, ROUND(SUM(cantidad * precio), 2) AS total_ventas FROM ventas GROUP BY ciudad ORDER BY total_ventas DESC
+ciudad | num_ventas | unidades | total_ventas
+Medellin | 7 | 13 | 3556.9
+Bogota | 7 | 18 | 2930.5
+Barranquilla | 4 | 8 | 2544.8
+Cali | 6 | 13 | 1465.5
+-- bytes escaneados: 1107 | tiempo: 603 ms

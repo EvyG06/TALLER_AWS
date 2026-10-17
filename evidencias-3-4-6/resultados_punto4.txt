@@ -1,0 +1,11 @@
+Vértices: [{'total': 10}]
+Relaciones: [{'total': 15}]
+
+1) Amigos directos de Ana
+[{'amigo': 'Bruno'}, {'amigo': 'Carla'}]
+
+2) Amigos de amigos de Ana (2 saltos)
+[{'sugerencia': 'Diego'}, {'sugerencia': 'Elena'}]
+
+3) Compañeros de Ana por materia
+[{'materia': 'BasesDatos', 'companeros': ['Bruno', 'Diego']}, {'materia': 'Redes', 'companeros': ['Diego', 'Felipe']}]

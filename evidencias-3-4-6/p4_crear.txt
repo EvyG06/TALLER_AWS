@@ -1,0 +1,16 @@
+Versión del motor: 1.4.8.1 (el endpoint público exige 1.4.6.0 o superior)
+Creando Neptune (≈10-15 min). Deja esta ventana abierta...
+{
+    "Cluster": "neptune-taller",
+    "Estado": "available",
+    "Motor": "1.4.8.1",
+    "AutenticacionIAM": true,
+    "Endpoint": "neptune-taller.cluster-c0zsoo28uvz2.us-east-1.neptune.amazonaws.com",
+    "Puerto": 8182
+}
+{
+    "Instancia": "neptune-taller-1",
+    "Clase": "db.t4g.medium",
+    "Estado": "available",
+    "AccesoPublico": true
+}

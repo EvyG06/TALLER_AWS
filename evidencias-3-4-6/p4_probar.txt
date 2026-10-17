@@ -1,0 +1,36 @@
+{
+    "status": "healthy",
+    "startTime": "Sat Oct 17 19:16:10 UTC 2026",
+    "dbEngineVersion": "1.4.8.1.R1",
+    "role": "writer",
+    "dfeQueryEngine": "viaQueryHint",
+    "gremlin": {
+        "version": "tinkerpop-3.7.1"
+    },
+    "sparql": {
+        "version": "sparql-1.1"
+    },
+    "opencypher": {
+        "version": "Neptune-9.0.20190305-1.0"
+    },
+    "labMode": {
+        "ObjectIndex": "disabled",
+        "TableSpaceAutoExtendSizeInMB": "",
+        "ReadWriteConflictDetection": "enabled"
+    },
+    "features": {
+        "SlowQueryLogs": "disabled",
+        "InlineServerGeneratedEdgeId": "disabled",
+        "ResultCache": {
+            "status": "disabled"
+        },
+        "IAMAuthentication": "enabled",
+        "Streams": "disabled",
+        "AuditLog": "disabled"
+    },
+    "settings": {
+        "StrictTimeoutValidation": "true",
+        "clusterQueryTimeoutInMs": "120000",
+        "SlowQueryLogsThreshold": "5000"
+    }
+}

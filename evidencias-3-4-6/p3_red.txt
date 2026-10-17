@@ -1,0 +1,6 @@
+Tu IP pública actual: 186.115.69.210
+Llave docdb-key ya existe: se reutiliza
+-r-------- 1 ingdatos ingdatos 1678 Sep 30 07:18 /home/ingdatos/.ssh/docdb-key.pem
+GRUPO | PUERTO | CIDR | DESDE-SG
+ec2-bastion-sg	22	186.115.69.210/32	None
+docdb-sg	27017	None	sg-0c8b103461a1a7f3e

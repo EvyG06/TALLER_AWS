@@ -1,0 +1,17 @@
+------------------------
+|       GetTable       |
++-----------+----------+
+|  id       |  bigint  |
+|  fecha    |  string  |
+|  cliente  |  string  |
+|  ciudad   |  string  |
+|  producto |  string  |
+|  cantidad |  bigint  |
+|  precio   |  double  |
++-----------+----------+
+{
+    "Serde": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+    "Clasificacion": "csv",
+    "SaltarEncabezado": "1",
+    "Ubicacion": "s3://taller-glue-121597330/datos/ventas/"
+}

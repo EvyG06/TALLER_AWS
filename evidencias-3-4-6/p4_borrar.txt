@@ -1,0 +1,13 @@
+>> Borrando Neptune...
+  esperando a que desaparezca el clúster...
+  esperando a que desaparezca el clúster...
+{
+    "Return": true,
+    "GroupId": "sg-03d7e912581c6f124"
+}
+>> Verificación final:
+== Clústeres Neptune ==
+== Instancias Neptune ==
+== Grupos de seguridad ==
+== Snapshots Neptune ==
+docdb-taller

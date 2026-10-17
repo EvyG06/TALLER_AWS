@@ -1,0 +1,16 @@
+cliente_id,nombre,ciudad,segmento,fecha_registro
+1,Ana,Bucaramanga,Hogar,2025-07-21
+2,Luis,Medellin,Hogar,2025-09-04
+3,Maria,Bucaramanga,Hogar,2025-09-07
+4,Carlos,Medellin,Hogar,2025-07-14
+5,Sofia,Bogota,Hogar,2025-02-18
+6,Andres,Pereira,Hogar,2025-10-04
+7,Laura,Barranquilla,Hogar,2025-10-19
+8,Juan,Pereira,Hogar,2025-04-02
+9,Valentina,Cali,Empresa,2025-07-05
+10,Diego,Bogota,Empresa,2025-09-27
+11,Camila,Cali,Hogar,2025-10-19
+12,Felipe,Barranquilla,Empresa,2025-02-18
+13,Isabella,Bogota,Hogar,2025-10-07
+14,Mateo,Manizales,Empresa,2025-06-15
+15,Daniela,Manizales,Empresa,2025-05-08

@@ -1,0 +1,3 @@
+Tu IP pública actual: 186.115.69.210
+GRUPO | PUERTO | CIDR
+neptune-sg	8182	186.115.69.210/32

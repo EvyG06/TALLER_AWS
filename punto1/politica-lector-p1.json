@@ -1,0 +1,14 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "LeerUnicamenteSecretoP1",
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:DescribeSecret"
+      ],
+      "Resource": "arn:aws:secretsmanager:us-east-2:ACCOUNT_ID:secret:taller/p1/app-demo-??????"
+    }
+  ]
+}

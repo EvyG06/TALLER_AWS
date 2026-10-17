@@ -1,0 +1,134 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "LecturaGeneralEC2yRDS",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:Describe*",
+        "rds:Describe*",
+        "rds:ListTagsForResource"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "RunInstancesSoloT3Micro",
+      "Effect": "Allow",
+      "Action": "ec2:RunInstances",
+      "Resource": "arn:aws:ec2:us-east-2:ACCOUNT_ID:instance/*",
+      "Condition": {
+        "StringEquals": {
+          "ec2:InstanceType": "t3.micro"
+        }
+      }
+    },
+    {
+      "Sid": "RunInstancesRecursosAsociados",
+      "Effect": "Allow",
+      "Action": "ec2:RunInstances",
+      "Resource": [
+        "arn:aws:ec2:us-east-2::image/*",
+        "arn:aws:ec2:us-east-2:ACCOUNT_ID:subnet/*",
+        "arn:aws:ec2:us-east-2:ACCOUNT_ID:network-interface/*",
+        "arn:aws:ec2:us-east-2:ACCOUNT_ID:security-group/*",
+        "arn:aws:ec2:us-east-2:ACCOUNT_ID:volume/*",
+        "arn:aws:ec2:us-east-2:ACCOUNT_ID:key-pair/*"
+      ]
+    },
+    {
+      "Sid": "GestionEC2yRed",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:TerminateInstances",
+        "ec2:CreateTags",
+        "ec2:DeleteTags",
+        "ec2:CreateSecurityGroup",
+        "ec2:DeleteSecurityGroup",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:RevokeSecurityGroupIngress",
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:RevokeSecurityGroupEgress"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:RequestedRegion": "us-east-2"
+        }
+      }
+    },
+    {
+      "Sid": "GestionRDS",
+      "Effect": "Allow",
+      "Action": [
+        "rds:CreateDBInstance",
+        "rds:DeleteDBInstance",
+        "rds:ModifyDBInstance",
+        "rds:CreateDBSubnetGroup",
+        "rds:DeleteDBSubnetGroup",
+        "rds:AddTagsToResource",
+        "rds:RemoveTagsFromResource"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:RequestedRegion": "us-east-2"
+        }
+      }
+    },
+    {
+      "Sid": "SecretoAdministradoPorRDS",
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:CreateSecret",
+        "secretsmanager:TagResource",
+        "secretsmanager:DescribeSecret"
+      ],
+      "Resource": "arn:aws:secretsmanager:us-east-2:ACCOUNT_ID:secret:rds!*"
+    },
+    {
+      "Sid": "KMSParaSecretoRDS",
+      "Effect": "Allow",
+      "Action": "kms:DescribeKey",
+      "Resource": "*"
+    },
+    {
+      "Sid": "RolVinculadoRDS",
+      "Effect": "Allow",
+      "Action": "iam:CreateServiceLinkedRole",
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "iam:AWSServiceName": "rds.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid": "ListarBuckets",
+      "Effect": "Allow",
+      "Action": "s3:ListAllMyBuckets",
+      "Resource": "*"
+    },
+    {
+      "Sid": "BucketsDelTaller",
+      "Effect": "Allow",
+      "Action": [
+        "s3:CreateBucket",
+        "s3:DeleteBucket",
+        "s3:Get*",
+        "s3:List*",
+        "s3:PutBucketTagging",
+        "s3:PutBucketPublicAccessBlock"
+      ],
+      "Resource": "arn:aws:s3:::taller-eve-*"
+    },
+    {
+      "Sid": "ObjetosDelTaller",
+      "Effect": "Allow",
+      "Action": [
+        "s3:DeleteObject",
+        "s3:DeleteObjectVersion"
+      ],
+      "Resource": "arn:aws:s3:::taller-eve-*/*"
+    }
+  ]
+}

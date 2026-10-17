@@ -1,0 +1,53 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "SubirDatosP5",
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:DeleteObject"
+      ],
+      "Resource": "arn:aws:s3:::taller-eve-p5-ACCOUNT_ID/*"
+    },
+    {
+      "Sid": "DataApiEnviar",
+      "Effect": "Allow",
+      "Action": [
+        "redshift-data:ExecuteStatement",
+        "redshift-data:BatchExecuteStatement"
+      ],
+      "Resource": "arn:aws:redshift-serverless:us-east-2:ACCOUNT_ID:workgroup/*"
+    },
+    {
+      "Sid": "DataApiConsultarResultados",
+      "Effect": "Allow",
+      "Action": [
+        "redshift-data:DescribeStatement",
+        "redshift-data:GetStatementResult",
+        "redshift-data:ListStatements",
+        "redshift-data:CancelStatement"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "LeerSecretoAdminRedshift",
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:DescribeSecret"
+      ],
+      "Resource": "arn:aws:secretsmanager:us-east-2:ACCOUNT_ID:secret:redshift!taller-p5-ns-*"
+    },
+    {
+      "Sid": "LeerWorkgroup",
+      "Effect": "Allow",
+      "Action": [
+        "redshift-serverless:GetWorkgroup",
+        "redshift-serverless:GetNamespace"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

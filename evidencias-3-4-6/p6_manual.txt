@@ -1,0 +1,8 @@
+
+>> CREATE EXTERNAL TABLE IF NOT EXISTS ventas_manual (id bigint, fecha date, cliente string, ciudad string, producto string, cantidad int, precio double) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LOCATION 's3://taller-glue-121597330/datos/ventas/' TBLPROPERTIES ('skip.header.line.count'='1')
+-- bytes escaneados: 0 | tiempo: 586 ms
+
+>> SELECT COUNT(*) AS total FROM ventas_manual
+total
+30
+-- bytes escaneados: 1419 | tiempo: 620 ms

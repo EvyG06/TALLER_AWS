@@ -1,0 +1,20 @@
+Corrijo columna 1: fecha:string  ->  fecha:date
+Corrijo columna 5: cantidad:bigint  ->  cantidad:int
+Tabla actualizada en el catálogo.
+------------------------
+|       GetTable       |
++-----------+----------+
+|  id       |  bigint  |
+|  fecha    |  date    |
+|  cliente  |  string  |
+|  ciudad   |  string  |
+|  producto |  string  |
+|  cantidad |  int     |
+|  precio   |  double  |
++-----------+----------+
+{
+    "Serde": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+    "Clasificacion": "csv",
+    "SaltarEncabezado": "1",
+    "Ubicacion": "s3://taller-glue-121597330/datos/ventas/"
+}

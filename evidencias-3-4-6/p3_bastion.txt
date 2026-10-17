@@ -1,0 +1,3 @@
+AMI: ami-0856027a77429315a | Subred: subnet-0987939e9254c8b81
+Esperando a que la EC2 arranque...
+EC2 lista: i-0bda2f56ca980f9a6 | IP pública: 98.80.193.141

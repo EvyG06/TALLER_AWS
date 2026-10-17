@@ -1,0 +1,19 @@
+Completed 312 Bytes/312 Bytes (736 Bytes/s) with 1 file(s) remainingupload: punto6/ventas_extra.csv to s3://taller-glue-121597330/datos/ventas/ventas_extra.csv
+Ejecutando crawler...
+  ...
+  ...
+  ...
+{
+    "Estado": "SUCCEEDED",
+    "Inicio": "2026-10-17T15:09:31-05:00",
+    "Fin": null
+}
+{
+    "TablasCreadas": 0,
+    "TablasActualizadas": 0
+}
+
+>> SELECT COUNT(*) AS total FROM ventas
+total
+30
+-- bytes escaneados: 1419 | tiempo: 618 ms

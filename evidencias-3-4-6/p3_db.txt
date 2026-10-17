@@ -1,0 +1,19 @@
+Modo: serverless | clase: db.serverless | motor: 5.0.2
+Creando DocumentDB (≈10 min). Deja esta ventana abierta...
+{
+    "Cluster": "docdb-taller",
+    "Estado": "available",
+    "Motor": "5.0.2",
+    "Endpoint": "docdb-taller.cluster-c0zsoo28uvz2.us-east-1.docdb.amazonaws.com",
+    "SecretoAdministrado": "arn:aws:secretsmanager:us-east-1:455958489632:secret:rds!cluster-ead8e5d0-bf86-4baf-9f79-1b5bd625a906-mswO8t",
+    "EstadoSecreto": "active",
+    "Serverless": {
+        "MinCapacity": 0.5,
+        "MaxCapacity": 2.0
+    }
+}
+{
+    "Instancia": "docdb-taller-1",
+    "Clase": "db.serverless",
+    "Estado": "available"
+}
